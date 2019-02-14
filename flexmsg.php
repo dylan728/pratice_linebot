@@ -9,120 +9,155 @@
   	$sender_txt = $json_obj->events[0]->message->text; //取得訊息內容
   	$sender_replyToken = $json_obj->events[0]->replyToken; //取得訊息的replyToken
   	$msg_json = '{
-  "type": "bubble",
-  "header": {
-    "type": "box",
-    "layout": "horizontal",
-    "contents": [
-      {
-        "type": "text",
-        "text": "NEWS DIGEST",
-        "weight": "bold",
-        "color": "#aaaaaa",
-        "size": "sm"
-      }
-    ]
-  },
-  "hero": {
-    "type": "image",
-    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_4_news.png",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "horizontal",
-    "spacing": "md",
-    "contents": [
-      {
-        "type": "box",
-        "layout": "vertical",
-        "flex": 1,
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_1.png",
-            "aspectMode": "cover",
-            "aspectRatio": "4:3",
-            "size": "sm",
-            "gravity": "bottom"
-          },
-          {
-            "type": "image",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_2.png",
-            "aspectMode": "cover",
-            "aspectRatio": "4:3",
-            "margin": "md",
-            "size": "sm"
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "flex": 2,
-        "contents": [
-          {
-            "type": "text",
-            "text": "7 Things to Know for Today",
-            "gravity": "top",
-            "size": "xs",
-            "flex": 1
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "Hay fever goes wild",
-            "gravity": "center",
-            "size": "xs",
-            "flex": 2
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "LINE Pay Begins Barcode Payment Service",
-            "gravity": "center",
-            "size": "xs",
-            "flex": 2
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "LINE Adds LINE Wallet",
-            "gravity": "bottom",
-            "size": "xs",
-            "flex": 1
-          }
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "horizontal",
-    "contents": [
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "More",
-          "uri": "https://linecorp.com"
-        }
-      }
-    ]
-  }
-}';
+		"type": "bubble",
+		"hero": {
+		  "type": "image",
+		  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+		  "size": "full",
+		  "aspectRatio": "20:13",
+		  "aspectMode": "cover",
+		  "action": {
+			"type": "uri",
+			"uri": "http://linecorp.com/"
+		  }
+		},
+		"body": {
+		  "type": "box",
+		  "layout": "vertical",
+		  "contents": [
+			{
+			  "type": "text",
+			  "text": "Brown Cafe",
+			  "weight": "bold",
+			  "size": "xl"
+			},
+			{
+			  "type": "box",
+			  "layout": "baseline",
+			  "margin": "md",
+			  "contents": [
+				{
+				  "type": "icon",
+				  "size": "sm",
+				  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+				},
+				{
+				  "type": "icon",
+				  "size": "sm",
+				  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+				},
+				{
+				  "type": "icon",
+				  "size": "sm",
+				  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+				},
+				{
+				  "type": "icon",
+				  "size": "sm",
+				  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+				},
+				{
+				  "type": "icon",
+				  "size": "sm",
+				  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+				},
+				{
+				  "type": "text",
+				  "text": "4.0",
+				  "size": "sm",
+				  "color": "#999999",
+				  "margin": "md",
+				  "flex": 0
+				}
+			  ]
+			},
+			{
+			  "type": "box",
+			  "layout": "vertical",
+			  "margin": "lg",
+			  "spacing": "sm",
+			  "contents": [
+				{
+				  "type": "box",
+				  "layout": "baseline",
+				  "spacing": "sm",
+				  "contents": [
+					{
+					  "type": "text",
+					  "text": "Place",
+					  "color": "#aaaaaa",
+					  "size": "sm",
+					  "flex": 1
+					},
+					{
+					  "type": "text",
+					  "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
+					  "wrap": true,
+					  "color": "#666666",
+					  "size": "sm",
+					  "flex": 5
+					}
+				  ]
+				},
+				{
+				  "type": "box",
+				  "layout": "baseline",
+				  "spacing": "sm",
+				  "contents": [
+					{
+					  "type": "text",
+					  "text": "Time",
+					  "color": "#aaaaaa",
+					  "size": "sm",
+					  "flex": 1
+					},
+					{
+					  "type": "text",
+					  "text": "10:00 - 23:00",
+					  "wrap": true,
+					  "color": "#666666",
+					  "size": "sm",
+					  "flex": 5
+					}
+				  ]
+				}
+			  ]
+			}
+		  ]
+		},
+		"footer": {
+		  "type": "box",
+		  "layout": "vertical",
+		  "spacing": "sm",
+		  "contents": [
+			{
+			  "type": "button",
+			  "style": "link",
+			  "height": "sm",
+			  "action": {
+				"type": "uri",
+				"label": "CALL",
+				"uri": "https://linecorp.com"
+			  }
+			},
+			{
+			  "type": "button",
+			  "style": "link",
+			  "height": "sm",
+			  "action": {
+				"type": "uri",
+				"label": "WEBSITE",
+				"uri": "https://linecorp.com"
+			  }
+			},
+			{
+			  "type": "spacer",
+			  "size": "sm"
+			}
+		  ],
+		  "flex": 0
+		}
+	  }';
   	$response = array (
 		"replyToken" => $sender_replyToken,
 		"messages" => array (
@@ -136,7 +171,7 @@
 			
   	fwrite($myfile, "\xEF\xBB\xBF".json_encode($response)); //在字串前面加上\xEF\xBB\xBF轉成utf8格式
   	$header[] = "Content-Type: application/json";
-  	$header[] = "Authorization: Bearer T0bbMQFl00OSe1xpqmecWQUV25JQOU/az38RsU0W53dE6tjYROpvAjHUlKgOKrdTdIjY2i+piDVkrFgqpOJfnegKWNaxnKmNyG1130g7wOkbnZfG99BX5TnLin4mDsaQ8exxVtuM9wt+AMmmbQBOzQdB04t89/1O/w1cDnyilFU=";
+  	$header[] = "Authorization: Bearer gd1gyH+Pc5TROu9ku5u/5tDvFnffsU8nXU69zXuhTgE0dIS5nVGmx9Js8PwijeUqgFuwWXzyJ14/N5FUmp/UXsmSJbUsxMGA6AW1gozlf6cbEgSGLiC02BEaRa5wUSqE7df8FOANP1WjPW8Mh/TgtwdB04t89/1O/w1cDnyilFU=";
   	$ch = curl_init("https://api.line.me/v2/bot/message/reply");
   	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
   	curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($response));                                                                  
